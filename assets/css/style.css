@@ -1,0 +1,99 @@
+@import url(ress_min.css);
+
+:root {
+	--color-background: #ecf6ff;
+}
+
+body {
+	background-color: var(--color-background);
+	margin-bottom: 40px;
+	font-size: min(16px, 4vw);
+}
+
+h1 {
+	text-align: center;
+}
+
+h1 img {
+	width: 100%;
+	max-width: 420px;
+	padding: 0 10px;
+}
+
+header {
+	height: 150px;
+}
+
+footer {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.searchBox {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3em;
+	width: calc(100% - 40px);
+	max-width: 584px;
+	margin: 35px auto 20px;
+	padding: 5px min(10px, 2vw);
+	background: white;
+	border: solid 1px #dfe1e5;
+	border-radius: 24px;
+	transition: all 0.5s ease;
+	animation: searchBoxShake1 6s ease-in-out 0s infinite alternate, searchBoxShake2 8.2s ease-in-out 2s infinite alternate;
+}
+
+@keyframes searchBoxShake1 {
+	0% {
+		left: -15px;
+	}
+	100% {
+		left: 15px;
+	}
+}
+
+@keyframes searchBoxShake2 {
+	0% {
+		top: 0px;
+	}
+	100% {
+		top: -20px;
+	}
+}
+
+.searchBox > img {
+	height: min(1.5em, 8vw);
+	margin: 0 min(5px, 1.5vw);
+}
+
+.searchBox > input {
+	width: 0;
+	flex-grow: 1;
+	height: 100%;
+	padding: 0 10px;
+	outline: none;
+}
+
+.searchBox.focusd,
+.searchBox:hover {
+	border: solid 1px transparent;
+	filter: drop-shadow(0px 1px 6px #20212447);
+}
+
+.goochan {
+	text-align: center;
+}
+
+.goochan > img {
+	width: 100%;
+	max-width: 250px;
+}
+
+@media(max-width: 320px){
+	.searchBox {
+		animation: searchBoxShake2 8.2s ease-in-out 2s infinite alternate;
+	}
+}

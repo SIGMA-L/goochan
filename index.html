@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>ぐーちゃん</title>
+	<meta name="author" content="Arrk_YR">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="検索エンジンぐーちゃん、ついに始動。Googleテキスト検索に特化したよ。">
+	<!-- hrefでサイトのアイコンを設定するよ↓ -->
+	<link rel="shortcut icon" href="assets/images/goochan_icon.png" type="image/x-icon">
+	<!-- 検索結果に表示されなくなるよ↓ -->
+	<meta name="robots" content="noindex,nofollow">
+	<!-- メアドとかのリンクが自動でされなくなるよ↓ -->
+	<meta name="format-detection" content="email=no,telephone=no,address=no">
+	<!-- Open Graph Protocol, Webの詳細表示↓ -->
+	<!-- TOPページのみ属性・og:typeをwebsite, それ以外はarticle↓ -->
+	<meta prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+	<meta property="og:type" content="website">
+	<!-- 絶対パス↓ -->
+	<meta property="og:url" content="">
+	<!-- 20字以内↓ -->
+	<meta property="og:title" content="検索エンジンぐーちゃん">
+	<!-- 90字以内↓ -->
+	<meta property="og:description" content="検索エンジンぐーちゃん、ついに始動。Googleテキスト検索に特化したよ。" />
+	<meta property="og:site_name" content="ぐーちゃん">
+	<meta property="og:image" content="">
+
+	<!-- Twitterシェア用 -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@Arrk_YR">
+	<meta name="twitter:title" content="芽河製作所">
+	<meta name="twitter:image" content="assets/images/goochan.png">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+	<header></header>
+	<h1><img src="assets/images/goochan_text.png" alt=""></h1>
+	<section class="searchBox" id="searchBox">
+		<img src="assets/images/search.png" alt="">
+		<input type="text" id="search" placeholder="ぐーちゃんと海へ行こう" onfocus="searchBoxOnFocus(true)" onblur="searchBoxOnFocus(false)">
+		<img src="assets/images/voice.png" alt="">
+		<img src="assets/images/image.png" alt="">
+	</section>
+	<section class="goochan">
+		<img src="assets/images/goochan.png" alt="">
+	</section>
+	<footer>
+		Tips: ShiftかCtrlを押しながらEnterを押すと新規タブで検索します<br>
+		2023/08/01 Ver. 1.0 | 芽河製作所 <a href="twitter.com/Arrk_YR" target="_blank">@Arrk_YR</a> | Illust by <a href="twitter.com/baku_illust" target="_blank">@baku_illust</a>
+	</footer>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
