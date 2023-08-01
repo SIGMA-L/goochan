@@ -92,8 +92,15 @@ footer {
 	max-width: 250px;
 }
 
+.icon {
+	height: 1.5em;
+	padding: 2px;
+	vertical-align: baseline;
+}
+
 @media(max-width: 320px){
 	.searchBox {
 		animation: searchBoxShake2 8.2s ease-in-out 2s infinite alternate;
 	}
 }
+
